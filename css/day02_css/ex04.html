@@ -1,0 +1,45 @@
+<!-- 
+외부 css적용시 따로 style추가 필요 없다.
+id 는 css를 두개 이상 적용 할 수 없다.
+class 는 css를 두개 이상 적용 할 수 있다. 
+w3schools.com -> menu -> learn bootstrap -> B4 -> 이미 만들어져 있는 디자인을 보면서 공부할 수 있음.
+링크로도 외부에서 포멧을 가져올 수 있고, 파일로도 가능하다.
+-->
+
+
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="test.css" />
+        <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+
+    </head>
+    <body>
+        <input type="button" class="btn btn-success" value="button">
+        <p class="p h">외부css적용</p>
+        <!-- <h3 class="h">외부css적용</h3> -->
+        <h3 id="h">외부css적용</h3>
+        
+        
+        <table class="container">
+            <tr>
+                <th>이름</th><th>나이</th><th>주소</th>
+            </tr>
+            <tr>
+                <th>홍길동</th><th>20</th><th>산골짜기</th>
+            </tr>
+            <tr>
+                <th>홍길동</th><th>20</th><th>산골짜기</th>
+            </tr>
+            <tr>
+                <th>홍길동</th><th>20</th><th>산골짜기</th>
+            </tr>
+            <tr>
+                <th>홍길동</th><th>20</th><th>산골짜기</th>
+            </tr>
+            <tr>
+                <th>홍길동</th><th>20</th><th>산골짜기</th>
+            </tr>
+        </table>   
+    </body>
+</html>

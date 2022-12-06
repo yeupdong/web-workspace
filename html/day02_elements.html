@@ -1,0 +1,134 @@
+<!--
+button = 텍스트박스 실행
+submit = 텍스트박스 써밋
+reset = 텍스트박스 리셋
+text = 텍스트박스 생성
+password = 비밀번호입력하는 텍스트박스 생성, 자동으로 비밀번호가림 표시.
+email = 이메일 텍스트박스 생성
+radio = 동그라미 체크 생성, 다중 선택 가능, name="같은 값" 지정시 하나만 선택 가능하게 함.
+checkbox = 체크박스 생성, 다중 선택 가능
+placeholder = 반투명 (텍스트입력창 안에 반투명하게 글씨가 뜬다.)
+name = 이름이 같은 것중 하나만 선택이 가능하게끔 해준다.
+
+#name 예시 1)
+10대<input type="radio" name="age"> = name="name" 이름이 같은 것중 하나만 선택이 가능해진다.
+20대<input type="radio" name="age">
+30대<input type="radio" name="age">
+40대<input type="radio" name="age">
+
+#name 예시 2)
+10대<input type="radio" name="a">  = 둘 중 하나씩만 선택이 가능, a하나, age하나
+20대<input type="radio" name="a">
+30대<input type="radio" name="age">
+40대<input type="radio" name="age">
+
+checked = radio에 이미 체크가 되어서 생성
+reset, submit = <form> 이라는 태그로 묶어줘야 동작
+button = 자바스크립트로 실행
+action = 사용자가 입력한 값들을 action "지정된 위치"로 연결시켜줌
+    ㄴ<form action="ex01.html"> 이라고 하면 submit 시 ex01.html로 연결시켜준다.
+
+#두 가지 전송방식
+
+post방식 =  해당하는 경로로 보내는게 아님(get 과 다르게 뒤에 안보이게 보낼 수 있음)
+            http라는 코드를 심어서 보내줌
+            대용량의 데이터를 보낼 때 사용
+            입력한 값이 보이지 않음(개인정보 보낼때 사용)
+get방식 =   내가 검색을 했을 때 인터넷주소(URL)에 검색어를 붙여줌. 
+            크기가 한정 되어 있음. 
+            작은양의 데이터를 보낼 때는 get방식 사용. 
+            사용자의 대한 민감한 정보들이 담을 경우는 get방식 사용 안함.(사용자 ID나 비밀번호 등)
+            
+#get방식 예시) https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=오늘의날씨
+
+<div> = 영역을 나눌 때 사용, 전체영역을 사용, <br>이 없어도 다음줄로 이동
+
+
+
+
+-->
+
+
+
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+        <input type="button" value="버어튼"><br>
+        <input type="submit" value="서브밋"><br>
+        <input type="reset" value="리셋"><br>
+        <input type="text" placeholder="input ID"><br>
+        <input type="text" value="텍스트"><br>
+        <input type="password" value="비번"><br>
+        <input type="email" value="이메일"><br>
+        <input type="radio"><br>
+        <input type="checkbox"><br>
+
+    <hr>
+
+        공부<input type="checkbox" checked>
+        멍<input type="checkbox">
+        게임<input type="checkbox">
+
+        10대<input type="radio" name="age" checked>
+        20대<input type="radio" name="age">
+        30대<input type="radio" name="age">
+        40대<input type="radio" name="age">
+        
+    <hr>
+        <form action="ex01.html">
+        <input type="text" name="n" placeholder="input name"><br>
+        <input type="text" name="a" placeholder="input address"><br>
+        <!--file:///D:/0.%20k-digital%20python/web_workspace/html/day01_basic_html.html?n=123&a=123
+        "n=123&a=123", name = 해당 값을 넘겨주는 변수와 같다고 생각하면 됨.-->
+        <input type="reset" value="초기화">
+        <input type="submit" value="서브밋">
+        <input type="button" value="버튼">
+        </form>
+
+        <!--<form action="day01_basic_html.html" method="post">
+        file:///D:/0.%20k-digital%20python/web_workspace/html/day01_basic_html.html
+        "day01_basic_html.html"
+        <input type="text" name="n" placeholder="input name"><br>
+        <input type="text" name="a" placeholder="input address"><br>
+        <input type="reset" value="초기화">
+        <input type="submit" value="서브밋">
+        <input type="button" value="버튼">
+        </form>
+        -->
+
+    <hr>
+
+        <form action="day01_basic_html.html" method="get">
+            <select name="test" size="2"> <!--name을 활용했더니 사과 배 귤을 선택하고 submit을 클릭했을 때 위의 웹페이지로 이동-->
+                <option value="p1">사과 <!--value를 통해 원하는 값들을 설정해서 전송-->
+                <option value="p2">배
+                <option value="p3">귤
+            </select>
+
+    
+
+        <fieldset>
+            <legend>취미조사</legend>
+            공부<input value="a1" name="hobby" type="checkbox"> <!--value값을 정해주어야 내부적으로 값을 지정하여 값을 가지고 넘어간다. value가 없으면 내부의 값이 없이 문구만 남게 된다.-->
+            멍<input value="a1" name="hobby" type="checkbox">
+            게임<input value="a1" name="hobby" type="checkbox">
+        </fieldset>
+
+    <hr>
+
+        <div style="background-color:antiquewhite">
+            div
+            <label style="background-color:darkcyan">label</label> <!-- 첫번 째 div에 inline방식을 추가해보면?-->
+        </div>
+        <div style="background-color:chartreuse">div</div>
+        <div style="background-color:darkgoldenrod">div</div>
+
+        <span style="background-color:aquamarine">span</span> <!-- inline방식, 글자의 영역 만큼만 차지.-->
+        <span style="background-color:bisque">span</span>
+        <label style="background-color:darkcyan">label</label>
+
+    </body>
+</html>

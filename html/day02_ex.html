@@ -1,0 +1,77 @@
+<!-- 
+header = 문서의 머리글(제목, 회사로고, 네비)을 나타낼 때 사용
+footer = 문서의 바닥글을 나타낼 때 사용
+nav = 네비게이션(경로이동) 태그
+section = 문서의 영역을 구분하는 태그
+article = 뉴스기사나 블로그 내용글과 같은 독립된 내용
+aside = 주요 컨텐츠 이외의 참고가 될 수 있는 내용
+figure = 그림, 비디오
+figcaption = 그림, 비디오 등 부연설명
+top = 무조건 웹 페이지의 제일 처음으로 이동 (<a href="#top">아무거나</a>)
+웹 브라우저 = 번역기, 우리의 코딩을 자신들만의 표현방식으로 번역하여 표현 (크롬, 익스플로러 등등 각자 표현방식이 다름)
+
+
+ -->
+
+<!--
+#<div> <header> 와 똑같다
+
+<div style="background-color:aqua">
+    <h1>제목글</h1>
+</div> 
+-->
+
+<hr>
+
+<header style="background-color:aqua">
+    <h1>제목글</h1>
+</header>
+<nav style="background-color:coral">
+    <ul>
+        <li><a href="#">이미지</a></li>
+        <li>지식in</li>
+        <li>웹튠</li>
+    </ul>
+</nav>
+
+<section style="background-color:cornflowerblue; height: 100px;">
+    <article style="background-color:chocolate">하나의 영역</article>
+    <article style="background-color:burlywood">하나의 영역</article>
+</section>
+
+<aside>
+    왼/오른쪽 부수적인 내용 포함
+</aside>
+
+<figure>
+    <img src="" width="100px" height="100px"><br>
+    <video src="resources/resources/media/video.m4v" controls loop autoplay width="300" height="250">
+        <!-- ㄴcontrols = 동영상 재생버튼 볼륨조절 등 컨트롤하는 기능들
+               loop = 반복재생
+               autoplay = 자동재생 -->
+</figure>
+
+<footer>
+    바닥글
+</footer>
+
+<header>
+    <h2>책갈피기능</h2>
+    <nav>
+        <a href="#user">[이름]</a>
+        <a href="#addr">[주소]</a>
+    </nav>
+</header>
+<h1>1</h1> <h1>1</h1> <h1>1</h1> <h1>1</h1>
+<section>
+    <p>이름 영역</p>
+    <a name="user">홍길동</a>
+    <a href="#top">[top]</a>
+    <h1>제목글</h1> <h1>제목글</h1> <h1>제목글</h1> <h1>제목글</h1>
+    <p>주소 영역</p>
+    <a name="addr">산골짜기</a>
+    <a href="#top">[top]</a>
+    <h1>제목글</h1> <h1>제목글</h1> <h1>제목글</h1> <h1>제목글</h1>
+
+
+</section>

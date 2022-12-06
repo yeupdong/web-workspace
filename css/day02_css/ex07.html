@@ -1,0 +1,50 @@
+<!-- 
+position
+relative = 현재 static값을 기점으로 배치한다. (상대위치)
+absolute = body를 기점으로 배치한다. (절대위치)
+
+
+ -->
+
+<html>
+    <head>
+        <style>
+            .span01{background-color: yellow; position: static; top: 5px;}
+            .span02{background-color: aqua; left: 5px;}
+            .span03{background-color: bisque; position: static; top: -5px;}
+            .div{background-color: skyblue;}
+
+            .span04{background-color: yellow; position:relative; top: 5px;}
+            .span05{background-color: aqua; left: 5px;}
+            .span06{background-color: bisque; position: relative; top: -5px;}
+
+            .span07{background-color: yellow; position: absolute; top: 5px;}
+            .span08{background-color: aqua; left: 5px;}
+            .span09{background-color: bisque; position: absolute; top: -5px;}
+        </style>
+    </head>
+    <body>
+        <div class="div">포지션</div>
+        <span class="span01">span1</span>
+        <span class="span02">span2</span>
+        <span class="span03">span3</span>
+        <div class="div">포지션</div>
+
+        <div class="div">relative</div>
+
+        <span class="span04">span4</span>
+        <span class="span05">span5</span>
+        <span class="span06">span6</span>
+
+        <div class="div">relative</div>
+
+
+        <div class="div">absolute</div>
+
+        <span class="span07">span4</span>
+        <span class="span08">span5</span>
+        <span class="span09">span6</span>
+
+        <div class="div">absolute</div>
+    </body>
+</html>

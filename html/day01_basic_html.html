@@ -1,0 +1,307 @@
+<!--
+# www.3wschools.com 추천
+# html 실행 시구글크롬으로 실행하는 것을 추천합니다!!!
+# 파일 -> 자동저장 = 켜놓으면 자동으로 내용을 저장해준다. 웹브라우저 새로고침(F5)을 하면 자동으로 변환된다. 자동저장이 체크되어있지 않으면, 좌측상단에 동그라미숫자가 표시된다.
+# F12 = 웹브라우저에서 F12를 누르면 해당 웹사이트의 코드내역을 볼 수 있음.
+# Google에 "html 특수문자" 검색 = 같은 표현방식을 특수문자를 이용하여 표현하는 표가 검색됨. 숫자 또는 문자로 표현 가능.
+# html 코딩에서 대소문자 구별을 하지 않음. 
+
+#문법 및 어휘
+
+html = 확장자 (웹사이트의 기본 골격이다.)
+< = 태그(element)
+<!DOCTYPE.html> = html type 을 말해줌(생략해도 됨)
+< > = 여는 태그
+</ > = 닫는 태그
+<head> = 제목
+<body> = 실질적 내용
+<br> = 엔터값
+<hr> = 직선
+    <hr color="color">
+    <hr align=" ">
+    <hr width=" ">
+    <hr size=" ">
+<p> 엔터를 2번한다 </p>
+text="color" = 글씨색깔을 변경
+bgcolor="color" = 배경색깔을 변경
+<h1~6>내용</h1~6> = 내용의 글씨 크기 1~6, 열이 자동으로 바뀐다. (block방식)
+예)
+<h1>문서의 주제목</h1>
+    <h2>문서의 주제목 또는 부제목</h2>
+        <h3>문서의 부제목 또는 내용</h3>
+            <h4>문서의 내용</h4>
+            <h5>문서의 내용</h5>
+            <h6>문서의 내용</h6>
+<font size="1~7">내용</font> = 글씨의 크기 1~7, 한 열에서 이어진다. (incline방식)
+<font face="궁서체">내용</font> = 글씨체 "궁서체"로 변경
+<font color="color">내용</font> = 글씨색깔을 변경
+<style ""> = (css) 디자인을 담당한다. 나중에 배움, Ctrl+spacebar 색깔옵션이 나온다.
+<b>굵은글씨</b>
+<i>기울임글꼴</i>
+<u>밑줄</u>
+<sup>위첨자</sup>
+<sub>아래첨자</sub>
+<tr> = 행
+<th> = 열, 굵은글씨, 가운데 정렬
+<td> = 열, 얇은글씨, 왼쪽정렬
+<colspan="#"> = #만큼 행을 병합
+<rowspan="#"> = #만큼 열을 병합
+<pre>공백</pre> = 사용자가 사용한 공백을 그대로 출력
+<ol>내용</ol> = 숫자 또는 알파벳으로 헤드
+<ul>내용</ul> = 모양으로 헤드 (disc = 검은 원, circle = 흰 원)
+<dl>내용</dl> = 용어를 설명하는 목록 만들기 (definition list)
+<dt>내용</dt> = 용어의 제목을 넣을 때 사용 (definition term)
+<dd>내용</dd> = 용어를 설명할 때 사용 (definition description) 들여쓰기, 앞에 공간이 생긴다.
+HTTP : 프로토콜 (규약 = 약속된 값, 예) 핸드폰 고유번호 010 )
+S = security (보안)
+<img src="이미지파일이름.확장자"> = 이미지 불러오기 (이미지 크기도 width와 height를 이용해서 조절 가능하다.)
+px = 픽셀 (모니터 사이즈)
+<a href="웹 주소">이름</a> = 링크걸기
+<a href="웹 주소" target="blank">이름</a> = 다른 탭에서 열린다
+<a href="웹 주소" title="몰까요???">이름</a> = 마우스커서를 올려놓았을 때 말풍선이 보인다
+<a href="test.html"> = 이미지 파일로도 링크연결이 가능하다.
+-->
+
+<html>
+    <head></head>
+        <title>연습입니다!!!!</title>
+        <!--
+        <body text="white" bgcolor="black">
+        -->
+        
+        <body>
+            
+
+
+
+            <hr>
+
+            <a href="https://www.naver.com/">네이버</a>
+            <a href="https://comic.naver.com/index" target="blank">네이버웹툰</a>
+            <a href="https://comic.naver.com/index" title="몰까요???">네이버웹툰</a>
+
+            <hr>
+            <a href="test.html">
+            <img src="다운로드.jpeg" width="100px" height="100px">
+            </a>
+            <hr>
+
+
+            <dl>
+                <dt>- - H T T P</dt>
+                    <dd>
+                        - HTML을 전달하는 프로토콜<br>
+                        URL은 http://도메인 주소로 사용
+                    </dd>
+            </dl>
+
+            <ol type="A">
+                <li>영화</li>
+                <li>독서</li>
+            </ol>
+            <ul type="circle">
+                <li>영화</li>
+                <li>독서</li>
+            </ul>
+            
+            <hr color="blue" align="right" width="200px">
+            <hr size="10">
+
+
+
+
+            <안녕>   &lt;안녕&gt;
+            <b>&copy;</b>
+            안 &nbsp;   &nbsp;  &nbsp;  녕
+            <pre>
+            공백을 아무리                   많이 
+            줘도~~~                 안되는 구나 
+            엔터도
+            </pre>
+            <hr>
+
+            <table border="1" width="300" height="200"  
+                                align="center" bgcolor="khaki"> <!--테이블의 너비와 높이, 정렬, 색깔도 조절가능-->
+                <tr> <!--행-->
+                    <th width="50">1</th> <th>2</th> <th>3</th> <!--th = 굵은글씨, 가운데 정렬-->
+                </tr>
+                <tr>
+                    <td>일이다</td> <td align="right">이<b>이</b>다</td> <td>삼이다</td> 
+                </tr>
+                <tr>
+                    <td>1</td> <td>2</td> <td>3</td> <!--td = 얇은글씨, 왼쪽정렬-->
+                </tr>
+            </table>
+
+            <table border="1"> <!--테이블의 너비와 높이, 정렬, 색깔도 조절가능-->
+                <tr> <!--행-->
+                    <th colspan="2">1</th> <th>3</th> <!--th = 굵은글씨, 가운데 정렬-->
+                </tr>
+                <tr>
+                    <td rowspan="2">일이다</td> <td>이이다</td> <td>삼이다</td> <!--td = 얇은글씨, 왼쪽정렬-->
+                </tr>
+                <tr>
+                    <td>1</td> <td>2</td> 
+                </tr>
+            </table>
+
+
+            <b>굵은글씨</b><br>
+            <i>기울임글꼴</i>
+            <u>밑줄</u>
+            <sup>위첨자</sup>
+            <sub>아래첨자</sub>
+
+            <h1 style="background-color : rosybrown;">
+                <label style="background-color : coral;">aaa</label>
+                <label style="background-color : darkgoldenrod;">bbb</label>
+            </h1>
+
+            <hr>
+            <font style="background-color : red;"></font>
+            <font face ="궁서체" color="blue">
+                궁서체~
+            </font>>
+            <h3>문서의 부제목 또는 내용</h3>
+            <h3 style="background-color: burlywood"> 문서의 부제목 또는 내용 </h3>
+
+            <hr>
+            <font size="1">1111</font>
+            <font size="2">2222</font>
+            <font size="3">3333</font>
+            <font size="4">4444</font>
+            <font size="5">5555</font>
+            <font size="6">6666</font>
+            <font size="7">7777</font>
+
+            <hr>
+            <h1>문서의 주제목</h1>
+            <h2>문서의 주제목 또는 부제목</h2>
+            <h3>문서의 부제목 또는 내용</h3>
+            <h4>문서의 내용</h4>
+            <h5>문서의 내용</h5>
+            <h6>문서의 내용</h6>
+
+            안녕<br><br>
+            <p>하세</p>
+            요
+            <hr>
+            안녕<br><br>
+            하세<br><br>
+            요
+            <hr>
+            <!--
+            안<br>녕<br>하<br>세<br>요<br>
+            또 다른 내용<br>
+            -->
+            작성입니다
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>예제 1. </title>
+        <body>
+            <table border="2", width="570" height="300" align="center">
+                <tr>
+                    <th align="center" colspan="5">IT 시간표</th>            
+                </tr>
+                <tr>
+                    <th width="120"></th> <th width="70">401호</th></th> <th>402호</th> <th width="230">403호</th> <th width="150">404호</th>
+                </tr>
+                <tr align="left">
+                    <th>09:00-12:00</th> <th align="center" rowspan="4"><p>공</p><p>사</p><p>중</p></th></th> <th>PYTHON 기초</th> <th rowspan="2">네트워크보안<br>실무자 양성</th> <th align="left">보충훈련 과정<br>(OS/네트워크)</th>
+                </tr>
+                <tr align="left">
+                    <th>12:30-15:30</th>  <th>JAVA</th>  <th>보충훈련 과정<br>(언어계열)</th>
+                </tr>
+                <tr align="left">
+                    <th>15:30-18:30</th>  <th>C언어</th> <th rowspan="2">가상화 시스템<br>엔지니어 실무자 양성</th> <th>리눅스</th>
+                </tr>
+                <tr align="left">
+                    <th>19:00-22:00</th>  <th>PYTHON_WEB</th>  <th>서버</th>
+                </tr>
+            </table>
+
+
+
+        </body>
+
+
+    </head>
+
+
+<html>
+    <title>예제 2.</title>
+    <head>
+        <body>
+        <!--3행 3열
+        1,3행 병합
+        -->
+        <table border="1" align="center" bgcolor="khaki" width="700px">    
+            <tr>
+            <pre>
+                <th colspan="3"><font face="궁서체" size="7" align="center">회사 소개</font>
+                    <hr width="300px" color="blue" border="2">
+                </th>
+            </pre>
+            </tr>
+
+            <tr align="left">
+                <th  width="150" height="200">
+                    <ul>
+                        <p>
+                            <li>
+                                <a href="https://www.naver.com/">네이버</a>
+                            </li>
+                        </p>
+                        <p>
+                            <li>
+                                <a href="https://www.google.com/">구글</a>
+                            </li>
+                        </p>
+                        <p>
+                            <li>
+                                <a href="https://www.daum.net/">다음</a>
+                            </li>
+                        </p>
+                    </ul>
+                </th> 
+                <th width="250">
+                    <dl>
+                        <h3>-회사소개-</h3>
+                        <dd>
+                            <p>
+                                <i>안녕하세요</i>
+                            </p>
+                            <p>
+                                <i>HTML 회사 입니다</i>
+                            </p>
+                            <p>
+                                <i>환영 합니다.</i>
+                            </p>
+                        </dd>
+                    </dl>
+                </th>
+                <th width="200">
+                    <img src="다운로드.jpeg" align="right" width="100px" height="100px">
+                </th>
+            </tr>
+
+            <tr>
+                <th colspan="3">회사소개&middot;광고안내&middot;검색등록&middot;제휴문의&middot;인재채용&middot;서비스약관&middot;
+                    청소년보호정책&middot;개인정보처리방침&middot;웹접근성안내&middot;고객센터 
+                    <b><i>Copyright &copy; CARE LAB.All rights reserved.</i></b></th>
+            </tr>
+
+
+            
+
+        </table>
+
+
+
+
+        </body>
+    </head>
+</html>

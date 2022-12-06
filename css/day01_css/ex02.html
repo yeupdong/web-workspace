@@ -1,0 +1,44 @@
+<!-- 
+text-decoration = 밑줄을 지움
+a:link = 스타일은 이 처럼 바로 태그가 가능하다.
+transition = 형변환하는 시간
+linear = 마우스커서를 올리고 나서 걸리는 시간
+align = 자기 영역 안에서 정렬하기
+transform = 크기 변환
+-->
+<html>
+    <head>
+        <style>
+            a:link{color:pink; text-decoration: none;}
+            a:visited{color:red;}
+            a:hover{text-decoration: overline;
+                                color:black;}
+            a:active{background-color: yellow;}
+            div{
+                width:200px; height: 100px; color: blue; background-color: green; opacity:0.9;
+            }
+            div:hover{
+                width:400px; height: 50px; color: red; background-color: yellow; opacity:0.5; transition: all 1.5s linear 0.5s;
+            }
+            img {width: 100px; height: 100px;}
+            img:hover {transform: scale(1.1); transition: all 0.2s;}
+            header {text-align: center;}
+        </style>
+    </head>
+    <body>
+        <header style="background-color:rebeccapurple">
+            <label style="background-color: red;">안녕</label>
+            <h3 style="background-color:burlywood;" align="center">css 연습</h3>
+            <img src="resources/resources/images/img.jpg">
+        </header>
+        
+        <div>가상 클래스 애니매이션</div>
+        <a href="#" target="_blank">test</a><br>
+        <a href="ex01.html" target="_blank">test</a>
+        <hr>
+        link : 방문하지 않은 곳<br>
+        visited : 방문한 곳<br>
+        hover : 마우스 커서가 올라갔을 경우<br>
+        active : 클릭이 되는 순간
+    </body>
+</html>

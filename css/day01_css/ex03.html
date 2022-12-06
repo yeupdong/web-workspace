@@ -1,0 +1,77 @@
+<!-- 
+display = 숨기기(none), 보이기(block).
+.classname {} = class호출하기
+nav 작성할 시 ul많이 사용한다
+padding(_방향)= 시계방향으로 안쪽으로 공간을 만듦 (위, 오른쪽, 아래, 왼쪽), 수를 하나만 입력시 4군데 모두를 의미.
+css 주석 = /*내용*/
+border(_방향)= 테두리 선 생성 (두께, 모양, 색깔)
+overflow: hidden = 벗어나는 영역을 숨겨줌
+ -->
+
+<html>
+    <head>
+        <style>
+            img{width: 100px; height: 100pxl;}
+            .h02{display:none;}
+            .h01:hover {display: none;}
+            .h01:hover + .h02 {display: block;}
+            
+            nav {background-color: black;}
+            nav ul {list-style: none; display: flex; justify-content: flex-end;}
+            /* ㄴnav ul = nav 안에 있는 ul을 불러옴*/
+            nav ul li {
+                        /* background-color:brown ; */
+                        padding: 10px; 
+            }
+            nav ul li a {text-decoration: none;
+                            color:white;}
+            nav ul li a:hover {color:orange;
+                                border-bottom: 1px solid orange;
+                                padding-bottom: 3px;
+                                transition: all 0.25s}
+            
+            .div01 {background-color: aquamarine;
+                    height: 100px; overflow: hidden;}
+            .div02 {background-color:brown;
+                    width: 200px; height: 200px;}
+        
+        
+        
+        
+        
+        </style>
+    </head>
+    <body>
+        <div class="div01">
+            hello
+            <div class=div02>
+                css
+
+            </div>
+        </div>
+        <h1>다음내용</h1>
+
+        <hr>
+
+        <nav>
+            <ul>
+                <li> <a href="#">HOME</a> </li>
+                <li> <a href="#">MEMBER</a> </li>
+                <li> <a href="#">BOARD</a> </li>
+            </ul>
+        </nav>
+
+
+
+        <hr>
+        <div class="h01">
+            <h1>none & block</h1>
+            <img src="resources/resources/images/img.jpg">
+        </div>
+
+        <div class="h02">
+            <h1>none & block</h1>
+            <img src="resources/resources/images/car01.png">
+        </div>
+    </body>
+</html>

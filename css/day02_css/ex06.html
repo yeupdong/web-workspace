@@ -1,0 +1,45 @@
+<!-- 
+wrap 전체적인 설정들을 감쌀 때 주로 쓰는 명칭, 감싼다. 
+flex = 가로정렬
+margin: auto = 틀이 가운데로 이동
+border-radius = 모서리 끝을 둥글게 해줌
+flex-flow: row/column = 가로/세로 배치
+display: flex;가 적용이 되야, flex-flow를 활용할 수 있다
+-->
+
+<html>
+    <head>
+        <style>
+            #wrap {display: flex; flex-flow: column; width: 90%; height: 200px; background-color: beige; margin: auto;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    text-align: center;}
+            #wrap div {width:33.333%; } /*wrap에 종속되어있는 div에 한해서 적용하겠습니다 라는 뜻*/
+            .div01 {order: 1; background-color: red;}
+            .div02 {display: flex; order: 3; background-color: green;}
+            .div03 {order: 2; background-color: aqua;}
+
+            /* #wrap div:first-child {background-color: red;}
+            #wrap div:nth-child(2) {background-color: green;}
+            #wrap div:nth-child(3) {background-color: aqua;} */
+             /*:first-child = 종속문장들중 첫번째 라는 뜻*/
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="div01"><h1>1</h1></div>
+            <div class="div02">
+                <h1>2-1</h1>
+                <h1>2-2</h1>
+                <h1>2-3</h1>
+            </div>
+            <div class="div03"><h1>3</h1></div>
+
+            <!-- 
+            <div><h1>1</h1></div>
+            <div><h1>2</h1></div>
+            <div><h1>3</h1></div> 
+            -->
+        </div>
+    </body>
+</html>

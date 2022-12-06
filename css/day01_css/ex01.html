@@ -1,0 +1,38 @@
+<!-- 
+css = 디자인적 요소를 담당하고 있음. 
+* = 모든 값에 적용
+color = 글씨 색깔
+background-color = 백그라운드색깔
+font-size = 글씨 크기
+
+
+<b>태그 선택자</b> = b 라는 태그에만 적용
+hover = 마우스커서가 올라갔을 때 표현해달라는 뜻
+
+
+
+-->
+
+<html>
+    <head>
+        <style>
+            * {
+                color:aqua;
+                background-color:azure;
+                font-size:50px;
+            }
+            b {background-color: burlywood;}
+            #id01 {background-color:cadetblue;}
+            .c01 {background-color: cornflowerblue;}
+            #id01:hover{font-size:15px;}
+
+        </style>
+    </head>
+    <body>
+        <h1>전체 스타일</h1>
+        <p>모두 적용</p>
+        <b>태그 선택자</b>
+        <div class="c01">div  선택자</div>
+        <div id="id01">div  선택자</div>
+    </body>
+</html>

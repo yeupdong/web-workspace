@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+.wrap { width: 1000px;  text-align: center; margin: auto;}
+
+.board {  border: 3px solid black; }
+
+.header { height: 100px; background-color: red; }
+.section { display: flex; height: 300px;}
+.nav { background-color: yellow; }
+.in_section { background-color: green; width: 70%; }
+.aside { background-color: olive; width: 30%; }
+.footer{ height: 50px; background-color: gray;}
+.in_side{ width: 80%; margin: auto; }
+.in_header{ background-color: lime; }
+.in_article{ background-color: lime; }
+.in_footer{ background-color: lime; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="header board">
+<h1>&lt;header&gt;</h1>
+</header>
+<nav class="nav board"><h3>&lt;nav&gt;</h3></nav>
+<section class="section board">
+<section class="in_section board">
+<h3>&lt;section&gt;</h3>
+<div class="in_side">
+<header class="in_header"><h3>&lt;header&gt;</h3></header>
+<article class="in_article"><h3>&lt;article&gt;</h3></article>
+<footer class="in_footer"><h3>&lt;footer&gt;</h3></footer>
+</div>
+</section>
+<aside class="aside board"><h3>&lt;aside&gt;</h3></aside>
+</section>
+<footer class="footer board"><h3 style="margin: 0;">&lt;footer&gt;</h3></footer>
+</div>
+</body>
+</html>
